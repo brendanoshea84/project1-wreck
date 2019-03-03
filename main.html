@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <script src="<script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>"></script>
+
+
+    <link rel="stylesheet" href="assets/index.css" type="text/css" />
+
+    <title>Wreck of Blues</title>
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-masthead navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+
+                    <button id='scroll-button' type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class='page-scroll' href="#home">Home</a></li>
+                        <li><a class='page-scroll' href="#tour">Tour</a></li>
+                        <li><a class='page-scroll' href="#music">Music</a></li>
+                        <li><a class='page-scroll' href="#video">Video</a></li>
+                        <li><a class='page-scroll' href="#member">Members</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <section id="home">
+        <div class="container-fluid">
+            <div class="row topbg">
+                <div class="col-xs-12 bandphoto">
+                    <alt>Band photo near a river in Stockholme</alt>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="start">
+        <div class="container-fluid">
+            <div class="row startbg">
+                <div class="parallax1">
+
+                    <div class="container jumbo">
+                        <div class="jumbotron">
+                            <div class="row">
+                                <div class="" <h1><u>Latest News</u></h1>
+                                    <p class="newslg">Wreck of Blues has been comfirmed for Rockboat 1st of March <a href="https://www.facebook.com/events/1535715219865093/" target="_blank">Click here to see the facebook Event!</a></p>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="newcd"></div>
+                                        </div>
+                                        <div class="col-md-9 cdtext">
+
+                                            <div class="content">
+                                                <a href="videostory" class="button more" id="videolink">New Song! Watch the Video here! 
+                                                <i class=" fa fa-play-circle" aria-hidden="true">&nbsp;</i></a>
+
+                                                <div id="videostory" class="mfp-hide" style="max-width: 75%; margin; 0 auto">
+
+                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/J4BtWOPg4ro" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script js>
+        $('#monitor').html($(window).width());
+
+        $(window).resize(function() {
+            var viewportWidth = $(window).width();
+            $('#monitor').html(viewportWidth);
+        });
+
+        $('#video').magnifiicPopup({
+            type: 'inline',
+            midClick: true;
+        })
+    </script>
+</body>
+
+</html>
