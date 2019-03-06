@@ -8,10 +8,26 @@
     margin-right: -15px !important;
 }
 
+.jumbotron {
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+}
+
 /*--------------text--------------------*/
 
 h1 {
     color: #d64815 !important;
+}
+
+h3 {
+    color: white !important;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+h5 {
+    color: white !important;
 }
 
 p {
@@ -19,11 +35,12 @@ p {
 }
 
 a {
-    color: #14d618 !important;
+    color: white !important;
 }
 
-h3 {
+.newtx {
     color: white !important;
+    font-size: 10%;
 }
 
 /*--------------links--------------------*/
@@ -87,15 +104,13 @@ a {
     height: 100%;
     transition: all 200ms ease-in-out;
     display: block;
-    
+
 }
 
 .topbg {
     width: 100%;
     height: auto;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: -100px;
+    margin: 0;
 }
 
 /*-----------------parallax------------------*/
@@ -109,24 +124,33 @@ a {
     background-position: center;
     background-size: auto;
     position: relative;
-    top: -50px;
+    top: 0;
     transition: all 200ms ease-in-out;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 .startbg {
     width: 100%;
     height: auto;
     padding: 0;
-    margin: -50px 0 -50px 0;
-    background-color: #37393d;
+    margin: 0;
+    z-index: -5;
 }
 
 /*-----------------jumbotron------------------*/
 
 .jumbo {
     margin-top: 100px;
+    width: 100%;
+    display: inline-block;
+    background-position: center;
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+    padding-left: 0!important;
+    padding-right: 0!important;
+
 }
 
 .jumbotron {
@@ -137,75 +161,322 @@ a {
     border: 2px solid black;
     text-shadow: black 0.3em 0.3em 0.3em;
     margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 0;
     padding-bottom: 0;
+    height: auto;
+    display: inline-block;
+    width: auto;
 }
 
-.newcd {
+.container {
+    position: relative;
+    width: 50%;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.container .btn:hover {
+    opacity: 0.8;
+}
+
+.btvideo {
     background-image: url(../assets/img/newstuff.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left;
-    height: auto;
-    width: 100%
+    border-radius: 15px;
 }
 
-.cdtext {
-    margin-top: 50px !important;
+.latestgigtx,
+.latestcdtx {
+    padding-top: 10px;
+    border-radius: 15px;
 }
 
-.mfp-hide {
-    display: none!important;
+/*--------------tour--------------------*/
+
+.tour {
+    margin-top: auto;
+    overflow: auto;
 }
-    
-.button {
-    padding-bottom: 20px;
-    border-color: white;
-    font-size: 20px;
-    font-weight: bold;
+
+.tourbg {
+    height: 620px;
+    background-color: rgb(66, 134, 244, 0.1);
+}
+
+.gigpost {
+    width: 100%;
+    height: 720px;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    border-radius: 5px;
+    float: left;
     display: inline-block;
-}    
+}
 
+.posters {
+    height: 250px;
+    text-align: center;
+    margin-top: 20px;
+    display: auto;
+
+}
+
+.posters1 {
+    height: 250px;
+    text-align: center;
+    max-width: 350px;
+}
+
+.post1 {
+    background-image: url(../assets/img/gig1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 400px;
+    transition: transform .2s;
+    transform-origin: top center;
+}
+
+.post1:hover {
+    transform: scale(auto);
+    z-index: 5;
+}
+
+
+.post2 {
+    background-image: url(../assets/img/gig2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 400px;
+    transform-origin: top left;
+    transition: transform .2s;
+}
+
+.post2:hover {
+    transform: scale(auto);
+    z-index: 5;
+}
+
+.post3 {
+    background-image: url(../assets/img/gig3.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 400px;
+    transition: transform .2s;
+    transform-origin: top right;
+
+}
+
+.post3:hover {
+    transform: scale(auto);
+    z-index: 5;
+}
+
+.giginfo {
+    width: 50%;
+    height: 620px;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    border-radius: 5px;
+    background-position: center;
+    float: right;
+    margin-right: 25%;
+}
+
+.info {
+    background-image: url(../assets/img/backdrop.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-height: 100%;
+    margin-left: 20%;
+}
+
+.music {
+    text-align: center;
+}
+
+.linkfacebook{
+    margin-top: 150px;
+}
+
+
+/*--------------music section--------------------*/
+
+.spot {
+    display: cover;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    margin-top: 350px;
+}
+
+.spotify {
+    background-image: url(../assets/img/wreck.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid black;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    margin-top: -100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 1000px;
+    display: inline-block;
+    width: 100%;
+}
+
+.iframes {
+    display: cover;
+    height: auto;
+    width: 100%;
+    z-index: 3;
+}
+
+.music {
+    width: 100%;
+}
+
+.tunestxt {
+    text-align: center;
+}
 
 /*--------------Media--------------------*/
 
 @media (min-width: 1281px) {
     .topbg {
-        height: 1100px;
+        height: 1000px;
     }
     .startbg {
-        height: 1000px;
+        height: 1300px;
     }
     .newcd {
         height: 200px;
     }
     .jumbotron {
         margin-top: 150px;
+        height: 400px;
+        width: 80%;
     }
     .parallax1 {
         background-size: cover
-        
     }
+    .newsmod {
+        margin-top: 100px;
+        height: 200px;
+    }
+    .btvideo,
+    .btgig {
+        height: 250px;
+        width: 100%;
+    }
+    .container .btn {
+        width: 300px;
+        height: 200px;
+    }
+    .newsmodtx {
+        margin-top: 100px;
+    }
+    .jumbo {
+        margin-top: 0!important;
+    }
+    #tour {
+        margin-top: 100px!important;
+    }
+    .post1:hover {
+        transform: scale(1.5);
+
+    }
+    .post2:hover {
+        transform: scale(1.5);
+
+    }
+    .post3:hover {
+        transform: scale(1.5);
+
+    }
+
+
 }
 
 
 @media (min-width: 1025px) and (max-width: 1280px) {
     .topbg {
-        height: 1100px;
+        height: 1000px;
     }
     .startbg {
-        height: 1000px;
+        height: 1300px;
     }
     .newcd {
         height: 200px;
     }
     .jumbotron {
         margin-top: 150px;
+        height: 400px;
+        width: 80%;
     }
     .parallax1 {
         background-size: cover;
+    }
+    .newsmod {
+        margin-top: 100px;
+        height: 200px;
+    }
+    .btvideo,
+    .btgig {
+        height: 250px;
+        width: 100%;
+    }
+    .container .btn {
+        width: 300px;
+        height: 200px;
+    }
+    .newsmodtx {
+        margin-top: 100px;
+    }
+    .jumbo {
+        margin-top: 0!important;
+    }
+    #tour {
+        margin-top: 100px!important;
+    }
+    .post1:hover {
+        transform: scale(1.5);
 
     }
+    .post2:hover {
+        transform: scale(1.5);
+
+    }
+    .post3:hover {
+        transform: scale(1.5);
+
+    }
+
+
 }
 
 
@@ -227,29 +498,76 @@ a {
 @media (min-width: 481px) and (max-width: 767px) {
     .topbg {
         height: 300px;
-        margin-top: 0px;
     }
     .startbg {
         height: 250px;
-        margin-top: -70px!important;
+        margin-top: 100px;
     }
 
     .jumbotron {
         margin-top: 50px;
+        height: 250px;
+        width: 100%;
     }
-    .newslg {
-        display: none;
-    }
+
     .parallax1 {
         background-size: contain;
-    
+        margin-top: 0;
+        background-attachment: scroll!important;
     }
+    .latestgig {
+        height: 100px;
+    }
+    .latestcd {
+        height: 100px;
+        margin-top: 20px;
+        display: block;
+    }
+    #start {
+        margin-top: 175px;
+    }
+
+    .jumbo {
+        margin-top: -50px;
+    }
+    .newsmod {
+        padding-top: 50px;
+    }
+    .container .btn {
+        width: 150px;
+        height: 100px;
+    }
+    .tour {
+        margin-top: -30px!important;
+    }
+    .gigpost {
+
+        width: 100%;
+    }
+    .post1:hover {
+        transform: scale(1);
+
+    }
+    .post2:hover {
+        transform: scale(1);
+
+    }
+    .post3:hover {
+        transform: scale(1);
+
+    }
+    .posters{
+        display: none;
+    }
+
+
+
+
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
     .topbg {
         height: 300px;
-        margin-top: 0px;
     }
     .startbg {
         height: 250px;
@@ -258,21 +576,60 @@ a {
 
     .jumbotron {
         margin-top: 50px;
+        height: 250px;
+        width: 100%;
     }
-    .newslg {
-        display: none;
-    }
+
     .parallax1 {
         background-size: contain;
+        margin-top: -120px!important;
+        background-attachment: scroll!important;
+    }
+    .latestgig {
+        height: 60px;
+    }
+    .latestcd {
+        height: 60px;
+        margin-top: 0px;
+        display: block;
+    }
+    #start {
+        margin-top: 175px;
+    }
+    .jumbo {
+        margin-top: -50px;
+    }
+    .newsmod {
+        padding-top: 50px;
+    }
+    .container .btn {
+        width: 150px;
+        height: 100px;
+    }
+    .tour {
+        margin-top: -30px!important;
+    }
+    .gigpost {
+
+        width: 100%;
+    }
+    .post1:hover {
+        transform: scale(1);
 
     }
-    
+    .post2:hover {
+        transform: scale(1);
+
+    }
+    .post3:hover {
+        transform: scale(1);
+    }
+    .posters{
+        display: none;
+    }
+
+
 }
-
-
-
-
-
 
 
 @media (max-width: 5000px) {
