@@ -21,3 +21,6 @@ The Cloud9 IDE team# project1-wreck
 Nav Bar- https://www.codeply.com/go/iaM1zcNsQB/bootstrap-navbar-always-collapsed
 
 youtube - https://avexdesigns.com/responsive-youtube-embed/
+
+modal- https://www.w3schools.com/Bootstrap/bootstrap_modal.asp
+https://getbootstrap.com/docs/3.3/javascript/#modals

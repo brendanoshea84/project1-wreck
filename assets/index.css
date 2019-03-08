@@ -13,6 +13,8 @@
     margin-right: -15px !important;
 }
 
+
+
 /*--------------text--------------------*/
 
 h1 {
@@ -30,12 +32,15 @@ h5 {
     color: white !important;
 }
 
+li {color: #d64815 !important;
+}
+
 p {
     color: white !important;
 }
 
 a {
-    color: white !important;
+    color: #d64815 !important;
 }
 
 .newtx {
@@ -56,6 +61,7 @@ a:link {
     border-color: transparent;
     text-transform: uppercase;
     background: none;
+    z-index: 10;
 }
 
 .navbar .navbar-collapse {
@@ -75,8 +81,8 @@ a:link {
 }
 
 a {
-    background-color: #E4E4E4;
-    color: #888888;
+    background-color: #d64815;
+    color: #d64815;
     font-size: 1.12em;
     padding-left: 10px;
     padding-right: 10px;
@@ -86,12 +92,25 @@ a {
 }
 
 .navbar-default .navbar-nav li a:hover {
-    color: #564F6F;
+    color: #931007;
 }
 
 .navbar-right {
     float: right!important;
 }
+
+
+/*--------------mob look--------------------*/
+
+.bgmob {
+    background-image: url(../assets/img/backdrop.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 
 /*--------------bandphoto--------------------*/
 
@@ -232,7 +251,7 @@ a {
 
 .tourbg {
     height: auto;
-    background-color: rgb(66, 134, 244, 0.1);
+
     margin-top: auto!important;
 }
 
@@ -251,13 +270,27 @@ a {
     text-align: center;
     margin-top: 20px;
     display: auto;
+}
+
+.post {
+    height: 250px;
+    text-align: center;
+    margin-top: 20px;
+    display: auto;
+    position: relative;
+
+
 
 }
 
 .posters1 {
     height: 250px;
     text-align: center;
-    max-width: 350px;
+    margin-top: 20px;
+    display: auto;
+    position: relative;
+
+
 }
 
 .post1 {
@@ -342,11 +375,11 @@ a {
     z-index: 2;
     width: 100%;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 300px;
 }
 
 .spotify {
-    background-image: url(../assets/img/backdrop.jpg);
+    background-image: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -357,7 +390,7 @@ a {
     margin-right: auto;
     padding-top: 0;
     padding-bottom: 0;
-    height: 1800px;
+    height: 1400px;
     display: inline-block;
     width: 100%;
 }
@@ -377,51 +410,56 @@ a {
     text-align: center;
 }
 
-/*--------------Media--------------------*/
+/*--------------review slide--------------------*/
 
-.reveiews {
+.reviewbg {
+    width: 80%;
+    height: 455px;
+    background-position: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.mySlides {
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.review1 {
+    background-image: url(../assets/img/review1.jpg);
     width: 100%;
-    height: 400px;
-    margin-top: -130px;
-}
-
-.rev {
-    height: 400px;
-    margin-top: 100px;
-}
-
-
-.review2 {
-    background-image: url(../assets/img/review2.jpg);
+    max-height: 455px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    min-height: 100%;
-    margin-left: 20%;
-    transition: transform .2s;
-    transform-origin: center left;
+    display: block;
+
 }
 
-.review2:hover {
-    transform: scale(auto);
-    z-index: 5;
+.review2 {
+    background-image: url(../assets/img/review2.jpg);
+    width: 100%;
+    max-height: 455px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: block;
 }
 
 .review3 {
     background-image: url(../assets/img/review3.jpg);
+    width: 100%;
+    max-height: 455px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    min-height: 100%;
-    margin-right: 20%;
-    transition: transform .2s;
-    transform-origin: center right;
+    display: block;
 }
 
-.review3:hover {
-    transform: scale(auto);
-    z-index: 5;
-}
+
+
+
 
 /*--------------youtube--------------------*/
 
@@ -442,14 +480,133 @@ a {
     z-index: 7;
 }
 
+.yout {
+    margin-top: auto;
+}
+
+/*--------------footer--------------------*/
+
+.footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    z-index: 10;
+}
+
+.footer:hover {
+    transform: scale(2);
+}
+
+.fa-facebook {
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.fa-facebook:hover {
+    color: #931007!important;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.fa-youtube {
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.fa-youtube:hover {
+    color: #931007!important;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.fa-spotify {
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.fa-spotify:hover {
+    color: #931007!important;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.fa-amazon {
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.fa-amazon:hover {
+    color: #931007!important;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.homebt {
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.homebt:hover {
+    color: #931007!important;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    text-decoration: none;
+}
+
+
+
+
 /*--------------Media--------------------*/
 
 @media (min-width: 1025px) {
+
     .topbg {
         height: 1000px;
     }
     .startbg {
-        height: 1300px;
+        height: 1500px;
     }
     .newcd {
         height: 200px;
@@ -497,7 +654,7 @@ a {
 
     }
     .linkfacebook {
-        margin-top: 150px;
+        margin-top: 200px;
     }
     .tourbg {
         height: 620px;
@@ -506,24 +663,38 @@ a {
         height: 720px;
     }
 
-    .review2 {
-        height: 500px;
+    .reviewbg {
+        width: 100%;
+        height: 455px;
+        background-position: center;
+        margin: 0 auto;
+        display: block;
     }
-    .review3 {
-        height: 500px;
+
+    .mySlides {
+        text-align: center;
+        margin-bottom: -100px!important;
+        height: 500px!important;
     }
-    .review1:hover {
-        transform: scale(1.5);
-        z-index: 5;
+
+    .reviewmod {
+        right: 50px;
     }
-    .review2:hover {
-        transform: scale(1.5);
-        z-index: 5;
+
+    .spotify {
+        background-image: url(../assets/img/backdrop.jpg);
     }
-    .review3:hover {
-        transform: scale(1.5);
-        z-index: 5;
+    .yout {
+        margin-top: 150px;
     }
+    .reveiwbt {
+        margin-top: 120px!important;
+    }
+
+
+
+
+
 
 
 
@@ -533,21 +704,275 @@ a {
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .topbg {
-        height: ;
+        height: 600px;
+        margin-top: -50px!important;
+    }
+    .intro {
+        display: none;
+    }
+    .startbg {
+        height: 250px;
+        margin-top: 100px;
+    }
+
+    .jumbotron {
+        margin-top: 50px;
+        height: 400px;
+        width: 100%;
+    }
+
+    .parallax1 {
+        background-size: contain;
+        margin-top: 0;
+        background-attachment: scroll!important;
+    }
+    .latestgig {
+        height: 100px;
+    }
+    .latestcd {
+        height: 100px;
+        margin-top: 20px;
+        display: block;
+    }
+    #start {
+        margin-top: -50px;
+    }
+
+    .jumbo {
+        margin-top: -50px;
+    }
+    .newsmod {
+        padding-top: 50px;
+    }
+    .container .btn {
+        width: 150px;
+        height: 100px;
+    }
+    .tour {
+        margin-top: 300px!important;
+    }
+    .tourbg {
+        margin-top: -50px!important;
+        height: 250px;
+    }
+    .gigpost {
+        margin-top: 100px!important;
+        width: 100%;
+    }
+
+    .linkfacebook {
+        margin-top: 150px;
+        padding-left: 30px!important;
+        padding-right: 30px!important;
+    }
+    .gigpost {
+        height: 320px;
+        margin-top: 300px;
+    }
+    .home {
+        margin-top: 50px!important;
+    }
+    .bandphoto {
+        top: 50px;
+    }
+    .review2 {
+        height: 500px;
+    }
+    .review3 {
+        height: 500px;
+    }
+    .spot {
+        margin-top: 50px!important;
+    }
+    .reviewmod {
+        width: 100%;
+    }
+    .reviewbg {
+        width: 100%!important;
+        height: 300px!important;
+        background-position: center;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .mySlides {
+        text-align: center;
+        margin-bottom: -100px!important;
+    }
+
+    .reviewmod {
+        right: 0!important;
+        width: 100%;
+    }
+    .review1,
+    .review2,
+    .review3 {
+        height: 360px;
+    }
+    .posters {
+        height: 0!important;
+        width: 0!important;
+
+    }
+    #music {
+        margin-top: 400px;
+    }
+    .spotify {
+        background-image: url(../assets/img/group.jpg);
+    }
+    .yout {
+        margin-top: 150px;
+    }
+    .post {
+        display: inherit;
+        width: 50%!important;
+    }
+    .posters1 {
+        display: inherit;
+        width: 50%!important;
+        margin-top: -270px;
+        margin-left: 400px;
     }
 }
+
+
 
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .topbg {
-        height: ;
+        height: 600px;
+        margin-top: -50px!important;
     }
+    .intro {
+        display: none;
+    }
+    .startbg {
+        height: 250px;
+        margin-top: 100px;
+    }
+
+    .jumbotron {
+        margin-top: 50px;
+        height: 400px;
+        width: 100%;
+    }
+
+    .parallax1 {
+        background-size: contain;
+        margin-top: 0;
+        background-attachment: scroll!important;
+    }
+    .latestgig {
+        height: 100px;
+    }
+    .latestcd {
+        height: 100px;
+        margin-top: 20px;
+        display: block;
+    }
+    #start {
+        margin-top: -50px;
+    }
+
+    .jumbo {
+        margin-top: -50px;
+    }
+    .newsmod {
+        padding-top: 50px;
+    }
+    .container .btn {
+        width: 150px;
+        height: 100px;
+    }
+    .tour {
+        margin-top: 300px!important;
+    }
+    .tourbg {
+        margin-top: -50px!important;
+        height: 250px;
+    }
+    .gigpost {
+        margin-top: 100px!important;
+        width: 100%;
+    }
+
+    .linkfacebook {
+        margin-top: 200px!important;
+        padding-left: 30px!important;
+        padding-right: 30px!important;
+    }
+    .gigpost {
+        height: 320px;
+        margin-top: 300px;
+    }
+    .home {
+        margin-top: 50px!important;
+    }
+    .bandphoto {
+        top: 50px;
+    }
+    .review2 {
+        height: 500px;
+    }
+    .review3 {
+        height: 500px;
+    }
+    .spot {
+        margin-top: 50px!important;
+    }
+    .reviewmod {
+        width: 100%;
+    }
+    .reviewbg {
+        width: 100%!important;
+        height: 300px!important;
+        background-position: center;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .mySlides {
+        text-align: center;
+        margin-bottom: -100px!important;
+    }
+
+    .reviewmod {
+        right: 0!important;
+    }
+    .review1,
+    .review2,
+    .review3 {
+        height: 360px;
+    }
+    .posters {
+        display: none;
+    }
+    #music {
+        margin-top: 400px;
+    }
+
+    .postmob {
+        display: inline-block;
+    }
+
+    .spotify {
+        background-image: url(../assets/img/group.jpg);
+    }
+    .yout {
+        margin-top: 150px;
+    }
+    .footer:hover {
+        transform: scale(1.5)!important;
+    }
+
 }
 
 
+
 @media (min-width: 481px) and (max-width: 767px) {
+
     .topbg {
-        height: 300px;
+        height: 600px;
         margin-top: -50px!important;
     }
     .intro {
@@ -592,7 +1017,7 @@ a {
         height: 100px;
     }
     .tour {
-        margin-top: -50px!important;
+        margin-top: 300px!important;
     }
     .tourbg {
         margin-top: -50px!important;
@@ -602,28 +1027,15 @@ a {
         margin-top: 20px;
         width: 100%;
     }
-    .post1:hover {
-        transform: scale(1);
 
-    }
-    .post2:hover {
-        transform: scale(1);
-
-    }
-    .post3:hover {
-        transform: scale(1);
-
-    }
-    .posters {
-        display: none;
-    }
     .linkfacebook {
-        margin-top: 0;
+        margin-top: 150px;
         padding-left: 30px!important;
         padding-right: 30px!important;
     }
     .gigpost {
         height: 320px;
+        margin-top: 300px;
     }
     .home {
         margin-top: 50px!important;
@@ -637,6 +1049,54 @@ a {
     .review3 {
         height: 500px;
     }
+    .spot {
+        margin-top: 50px!important;
+    }
+    .reviewmod {
+        width: 100%;
+    }
+    .reviewbg {
+        width: 100%!important;
+        height: 300px!important;
+        background-position: center;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .mySlides {
+        text-align: center;
+        margin-bottom: -100px!important;
+    }
+
+    .reviewmod {
+        right: 0!important;
+    }
+    .review1,
+    .review2,
+    .review3 {
+        height: 360px;
+    }
+    .posters {
+        display: none;
+    }
+    .posters1 {
+        display: none!important;
+    }
+    #music {
+        margin-top: 400px;
+    }
+
+
+    .spotify {
+        background-image: url(../assets/img/group.jpg);
+    }
+    .yout {
+        margin-top: 150px;
+    }
+    .footer:hover {
+        transform: scale(1.5)!important;
+    }
+
 
 
 
@@ -645,6 +1105,7 @@ a {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+
     .topbg {
         height: 300px;
         margin-top: -50px!important;
@@ -690,32 +1151,19 @@ a {
         height: 100px;
     }
     .tour {
-        margin-top: -50px!important;
+        margin-top: 300px!important;
     }
     .tourbg {
         margin-top: -50px!important;
         height: 250px;
     }
     .gigpost {
-        margin-top: 20px;
+        margin-top: 300px;
         width: 100%;
     }
-    .post1:hover {
-        transform: scale(1);
 
-    }
-    .post2:hover {
-        transform: scale(1);
-
-    }
-    .post3:hover {
-        transform: scale(1);
-    }
-    .posters {
-        display: none;
-    }
     .linkfacebook {
-        margin-top: 0;
+        margin-top: 150px;
         padding-left: 30px!important;
         padding-right: 30px!important;
     }
@@ -727,12 +1175,66 @@ a {
     }
     .bandphoto {
         top: 50px;
+        display: none!important;
     }
     .review2 {
         height: 500px;
     }
     .review3 {
         height: 500px;
+    }
+    .spot {
+        margin-top: 50px!important;
+    }
+    .reviewbg {
+        width: 100%!important;
+        height: 300px!important;
+        background-position: center;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .mySlides {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .reviewmod {
+        right: 0!important;
+    }
+
+    .review1,
+    .review2,
+    .review3 {
+        height: 360px;
+    }
+
+    .spotify {
+        margin-top: 100px!important;
+    }
+
+
+    .posters {
+        display: none;
+    }
+    .posters1 {
+        display: none!important;
+    }
+    .posters3 {
+        display: none;
+    }
+
+    #music {
+        margin-top: 300px;
+    }
+    .spotify {
+        background-image: url(../assets/img/group.jpg);
+    }
+    .yout {
+        margin-top: 100px;
+    }
+    .footer:hover {
+        transform: scale(1.5)!important;
     }
 
 
