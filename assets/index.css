@@ -1,3 +1,7 @@
+.html {
+    font-family: 'Overpass', sans-serif;
+}
+
 .body {
     padding: 0;
     margin: 0;
@@ -19,32 +23,39 @@
 
 h1 {
     color: #d64815 !important;
+    font-family: Overpass!important;
 }
 
 h3 {
     color: white !important;
     text-align: center;
     font-weight: bold;
-
+    font-family: Overpass!important;
 }
 
 h5 {
     color: white !important;
+    font-family: Overpass!important;
 }
 
-li {color: #d64815 !important;
+li {
+    color: #d64815 !important;
+    font-family: Overpass!important;
 }
 
 p {
     color: white !important;
+    font-family: Overpass!important;
 }
 
 a {
     color: #d64815 !important;
+    font-family: Overpass!important;
 }
 
 .newtx {
     color: white !important;
+    font-family: Overpass!important;
     font-size: 10%;
 }
 
@@ -705,7 +716,7 @@ a {
 @media (min-width: 768px) and (max-width: 1024px) {
     .topbg {
         height: 600px;
-        margin-top: -50px!important;
+        margin-top: -155px!important;
     }
     .intro {
         display: none;
@@ -769,7 +780,7 @@ a {
         height: 320px;
         margin-top: 300px;
     }
-    .home {
+    #home {
         margin-top: 50px!important;
     }
     .bandphoto {
@@ -786,6 +797,7 @@ a {
     }
     .reviewmod {
         width: 100%;
+        margin-top: 50px!important;
     }
     .reviewbg {
         width: 100%!important;
@@ -905,8 +917,8 @@ a {
         height: 320px;
         margin-top: 300px;
     }
-    .home {
-        margin-top: 50px!important;
+    #home {
+        margin-top: -50px!important;
     }
     .bandphoto {
         top: 50px;
@@ -1175,7 +1187,7 @@ a {
     }
     .bandphoto {
         top: 50px;
-        display: none!important;
+
     }
     .review2 {
         height: 500px;
@@ -1235,6 +1247,10 @@ a {
     }
     .footer:hover {
         transform: scale(1.5)!important;
+    }
+    
+    .navbar {
+        margin-right: 30px!important;
     }
 
 
