@@ -393,7 +393,7 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  
+
     text-shadow: black 0.3em 0.3em 0.3em;
     margin-top: -100px;
     margin-left: auto;
@@ -511,18 +511,68 @@ a {
 .contactbox {
     height: 800px;
     width: 100%;
-   
     padding: 0!important;
+    overflow: auto;
 }
 
 .contactform {
-   
-    height: 800px;
+    height: auto;
     width: 100%;
     padding: 0!important;
     margin: 0!important;
 }
 
+.contactsize {
+    width: 100%;
+    height: 750px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+
+input[type=submit] {
+    background-color: rgb(28, 81, 188, 0.8);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+
+.container {
+    border-radius: 5px;
+    background-color: rgb(81, 96, 127, 0.8);
+    padding: 20px;
+}
 
 /*--------------footer--------------------*/
 
@@ -730,13 +780,9 @@ a {
     .reveiwbt {
         margin-top: 120px!important;
     }
-
-
-
-
-
-
-
+    .contactform {
+        height: 800px;
+    }
 
 }
 
@@ -771,7 +817,6 @@ a {
     }
     .latestcd {
         height: 100px;
-        margin-top: 20px;
         display: block;
     }
     #start {
@@ -874,6 +919,9 @@ a {
         width: 50%!important;
         margin-top: -270px;
         margin-left: 400px;
+    }
+    .formbg {
+        margin-top: -40px!important;
     }
 }
 
@@ -1006,6 +1054,9 @@ a {
     .footer:hover {
         transform: scale(1.5)!important;
     }
+    .formbg {
+        margin-top: -40px!important;
+    }
 
 }
 
@@ -1112,6 +1163,7 @@ a {
 
     .reviewmod {
         right: 0!important;
+        margin-top: 200px;
     }
     .review1,
     .review2,
@@ -1133,12 +1185,20 @@ a {
         background-image: url(../assets/img/group.jpg);
     }
     .yout {
-        margin-top: 150px;
+        margin-top: 300px;
     }
     .footer:hover {
         transform: scale(1.5)!important;
     }
-
+    .contactbox {
+        margin-top: -200px!important;
+    }
+    .formbg {
+        margin-top: -240px;
+    }
+    .contactform {
+        height: 750px;
+    }
 
 
 
@@ -1282,8 +1342,15 @@ a {
     .navbar {
         margin-right: 30px!important;
     }
-
-
+    .contactbox {
+        margin-top: -200px!important;
+    }
+    .formbg {
+        margin-top: -240px;
+    }
+    .contactform {
+        height: 750px;
+    }
 
 }
 

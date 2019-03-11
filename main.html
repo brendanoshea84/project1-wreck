@@ -181,23 +181,32 @@
                         <div class="contactbg"></div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-6">
+                <div class="col-xs-12 col-md-6 formbg">
                     <div class="contactform">
-                        <div class="container">
+                        <div class="container contactsize">
+
                             <form action="action_page.php">
+
+                                <label for="options">We are interested in hiring for a.....</label>
+                                <select id="options" name="options">
+      <option value="festival">Festival</option>
+      <option value="Tour">Tour</option>
+      <option value="privit">Privite Party</option>
+      
+    </select>
 
                                 <label for="fname">First Name</label>
                                 <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
                                 <label for="lname">Last Name</label>
                                 <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                                
+                                <label for="email">Email address</label>
+                                <input type="text" id="email" name="email" placeholder="Email address..">
 
-                                <label for="country">Country</label>
-                                <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="Phone" placeholder="Your contact number..">
+                                <br>
 
                                 <label for="subject">Subject</label>
                                 <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
