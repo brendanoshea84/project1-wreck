@@ -175,7 +175,7 @@
 
     <section id="contact">
         <div class="container-fluid">
-            <div class="row">
+            <div class="row contactrow">
                 <div class="col-xs-12 col-md-6">
                     <div class="contactbox">
                         <div class="contactbg"></div>
@@ -185,7 +185,7 @@
                     <div class="contactform">
                         <div class="container contactsize">
 
-                            <form action="action_page.php">
+                            <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
 
                                 <label for="options">We are interested in hiring for a.....</label>
                                 <select id="options" name="options">
@@ -196,16 +196,16 @@
     </select>
 
                                 <label for="fname">First Name</label>
-                                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                                <input type="text" id="fname" name="firstname" placeholder="Your name.."required>
 
                                 <label for="lname">Last Name</label>
-                                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                                
+                                <input type="text" id="lname" name="lastname" placeholder="Your last name.."required>
+
                                 <label for="email">Email address</label>
-                                <input type="text" id="email" name="email" placeholder="Email address..">
+                                <input type="text" id="email" name="email" placeholder="Email address.."required>
 
                                 <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="Phone" placeholder="Your contact number..">
+                                <input type="tel" id="phone" name="Phone" placeholder="Your contact number.."required>
                                 <br>
 
                                 <label for="subject">Subject</label>
@@ -239,6 +239,13 @@
 
 
     <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+        }
         var slideIndex = 1;
         showDivs(slideIndex);
 
