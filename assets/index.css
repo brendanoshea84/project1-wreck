@@ -1191,7 +1191,9 @@ input[type=submit]:hover {
         height: 750px;
     }
 
-
+    .video-responsive {
+        margin-top: 70px!important;
+    }
 
 
 
