@@ -1,26 +1,11 @@
+# Pontus Snibb's Wreck of Blues
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+First Milestone project for Code Institute: User-Centric- Frontend Development.
 
+A centeral website to show and advertise the band "Pontus Snibb's Wreck of Blues."
 
-Hi there! Welcome to Cloud9 IDE!
+## UX
 
-To get you started, create some files, play with the terminal,
-or visit http://docs.c9.io for our documentation.
-If you want, you can also go watch some training videos at
-http://www.youtube.com/user/c9ide.
+This website is for the band "Pontus Snibb's Wreck of Blues," at current the BAND has allot of content on many other sites. This website should provide a central location so viewers can observe, example and interact with the band.
 
-Happy coding!
-The Cloud9 IDE team# project1-wreck
-
-
-Nav Bar- https://www.codeply.com/go/iaM1zcNsQB/bootstrap-navbar-always-collapsed
-
-youtube - https://avexdesigns.com/responsive-youtube-embed/
-
-modal- https://www.w3schools.com/Bootstrap/bootstrap_modal.asp
-https://getbootstrap.com/docs/3.3/javascript/#modals
+ 
