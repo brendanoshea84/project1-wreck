@@ -3,7 +3,7 @@
 
 .body {
     padding: 0;
-    margin: 0;
+    margin: 0!important;
 }
 
 .container-fluid {
@@ -278,14 +278,12 @@ a {
 .posters {
     height: 250px;
     text-align: center;
-    margin-top: 20px;
     display: auto;
 }
 
 .post {
     height: 250px;
     text-align: center;
-    margin-top: 20px;
     display: auto;
     position: relative;
 
@@ -296,7 +294,6 @@ a {
 .posters1 {
     height: 250px;
     text-align: center;
-    margin-top: 20px;
     display: auto;
     position: relative;
 
@@ -393,13 +390,13 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-text-shadow: black 0.3em 0.3em 0.3em;
+    text-shadow: black 0.3em 0.3em 0.3em;
     margin-top: -100px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 0;
     padding-bottom: 0;
-    height: 1405px;
+    height: auto!important;
     display: inline-block;
     width: 100%;
 }
@@ -526,7 +523,7 @@ text-shadow: black 0.3em 0.3em 0.3em;
     height: 750px;
 }
 
-.contactrow{
+.contactrow {
     background-color: #030b19;
     padding-top: 30px;
 }
@@ -681,6 +678,12 @@ input[type=submit]:hover {
 
 /*--------------Media--------------------*/
 
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .spt {
+        margin-bottom: 80px!important;
+    }
+}
+
 @media (min-width: 1025px) {
 
     .topbg {
@@ -748,7 +751,7 @@ input[type=submit]:hover {
         width: 100%;
         height: 455px;
         background-position: center;
-        margin: 0 auto;
+        margin-top: 0px;
         display: block;
     }
 
@@ -759,20 +762,31 @@ input[type=submit]:hover {
     }
 
     .reviewmod {
-        right: 50px;
+        margin-top: 50px!important;
+        height: 455px!important;
+        top: -100px!important;
     }
 
     .spotify {
         background-image: url(../assets/img/backdrop.jpg);
+        height: 1605px;
     }
     .yout {
-        margin-top: 150px;
+        margin-top: 100px!important;
+        margin-bottom: 50px!important;
+
     }
     .reveiwbt {
         margin-top: 120px!important;
     }
     .contactform {
         height: 800px;
+    }
+    .spot {
+        margin-top: 200px!important;
+    }
+    .spt {
+        bottom: 50px!important;
     }
 
 }
@@ -859,7 +873,7 @@ input[type=submit]:hover {
         height: 500px;
     }
     .spot {
-        margin-top: 50px!important;
+        margin-top: 150px!important;
     }
     .reviewmod {
         width: 100%;
@@ -897,6 +911,7 @@ input[type=submit]:hover {
     }
     .spotify {
         background-image: url(../assets/img/group.jpg);
+        height: 1600px!important;
     }
     .yout {
         margin-top: 150px;
@@ -908,11 +923,12 @@ input[type=submit]:hover {
     .posters1 {
         display: inherit;
         width: 50%!important;
-        margin-top: -270px;
-        margin-left: 400px;
     }
     .formbg {
         margin-top: -40px!important;
+    }
+    .postmob {
+        width: 100%;
     }
 }
 
