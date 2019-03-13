@@ -196,22 +196,34 @@
     </select>
 
                                 <label for="fname">First Name</label>
-                                <input type="text" id="fname" name="firstname" placeholder="Your name.."required>
+                                <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
 
                                 <label for="lname">Last Name</label>
-                                <input type="text" id="lname" name="lastname" placeholder="Your last name.."required>
+                                <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
 
                                 <label for="email">Email address</label>
-                                <input type="email" id="email" name="email" placeholder="Email address.."required>
+                                <input type="email" id="email" name="email" placeholder="Email address.." required>
 
                                 <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="Phone" placeholder="Your contact number.."required>
+                                <input type="tel" id="phone" name="Phone" placeholder="Your contact number.." required>
                                 <br>
 
                                 <label for="subject">Subject</label>
                                 <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-                                <input type="submit" value="Submit">
+                                <!-- Trigger/Open The Modal -->
+                                <button id="myBtn">Thank-you</button>
+
+                                <!-- The Modal -->
+                                <div id="myModal" class="modal">
+
+                                    <!-- Modal content -->
+                                    <div class="modal-content" style="top:25%;">
+                                        <span class="close">&times;</span>
+                                        <p class="mondaltext">At this time, Pontus Snibb's Wreck of Blues, are not taking any request. More information coming soon!</p>
+                                    </div>
+
+                                </div>
 
                             </form>
                         </div>
@@ -239,6 +251,31 @@
 
 
     <script>
+    // Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+} 
         function validateForm() {
             var x = document.forms["myForm"]["fname"].value;
             if (x == "") {
