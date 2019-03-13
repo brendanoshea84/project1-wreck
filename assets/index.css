@@ -21,7 +21,7 @@
 /*--------------text--------------------*/
 
 h1 {
-    color: #d64815 !important;
+    color: #245fbf !important;
     font-family: Overpass!important;
 }
 
@@ -635,7 +635,7 @@ input[type=submit]:hover {
 }
 
 .fa-facebook:hover {
-    color: #931007!important;
+    color: #135b12!important;
     -o-transition: .5s;
     -ms-transition: .5s;
     -moz-transition: .5s;
@@ -654,7 +654,7 @@ input[type=submit]:hover {
 }
 
 .fa-youtube:hover {
-    color: #931007!important;
+    color: #135b12!important;
     -o-transition: .5s;
     -ms-transition: .5s;
     -moz-transition: .5s;
@@ -673,7 +673,7 @@ input[type=submit]:hover {
 }
 
 .fa-spotify:hover {
-    color: #931007!important;
+    color: #135b12!important;
     -o-transition: .5s;
     -ms-transition: .5s;
     -moz-transition: .5s;
@@ -692,7 +692,7 @@ input[type=submit]:hover {
 }
 
 .fa-amazon:hover {
-    color: #931007!important;
+    color: #135b12!important;
     -o-transition: .5s;
     -ms-transition: .5s;
     -moz-transition: .5s;
@@ -711,7 +711,7 @@ input[type=submit]:hover {
 }
 
 .homebt:hover {
-    color: #931007!important;
+    color: #135b12!important;
     -o-transition: .5s;
     -ms-transition: .5s;
     -moz-transition: .5s;
